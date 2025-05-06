@@ -1,0 +1,1 @@
+# Repositório dos exercícios de fundamentos Python - EDN
