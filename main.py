@@ -15,8 +15,8 @@ def menu(dictionary):
 
             
 
-            if user_option < 0 or user_option > 10:
-                raise ValueError('Escolha um número entre 0 e 10')
+            if user_option < 0 or user_option > 12:
+                raise ValueError('Escolha um número entre 0 e 12')
 
         except (TypeError, ValueError) as e:
             print(e)
@@ -28,7 +28,8 @@ def menu(dictionary):
 def read_files_names(dictionary):
     aula01 = dictionary.get(0)
     aula02 = dictionary.get(1)
-    all = aula01 + aula02
+    aula03 = dictionary.get(2)
+    all = aula01 + aula02 + aula03
     
     return {key: value for key, value in enumerate(all) if value !='__pycache__'}
 
@@ -56,16 +57,21 @@ def switch(option, folder, dict_all_files):
             return f'python3 {folder[1]}/{dict_all_files.get(9)}'
         case 10:
             return f'python3 {folder[1]}/{dict_all_files.get(10)}'
+        case 11:
+            return f'python3 {folder[2]}/{dict_all_files.get(11)}'
+        case 12:
+            return f'python3 {folder[2]}/{dict_all_files.get(12)}'
 
 
 def main():
-    folder = "aula01/atividades", "aula02/atividades"
+    folder = "aula01/atividades", "aula02/atividades", "aula03/atividades"
     while True:
     
         dict_files = {x: os.listdir(folder[x]) for x in range(len(folder))}
     
         dict_all_files = read_files_names(dict_files) 
         option = menu(dict_all_files) 
+        print(option)
 
         os.system(switch(option, folder, dict_all_files))
         input("Aperte Enter para continuar ou crtl + c para sair")
