@@ -32,7 +32,13 @@ Você pode rodar o arquivo o arquivo "main.py" para abrir um menu de escolha con
 │   │   ├── teste.py
 │   │   ├── validador_dia_util.py
 │   │   ├── |validador_intervalo_numerico.py
-|
-|
+|   │
+|   │
+├── aula03
+│   ├── atividades
+│   │   ├── calculadora.py
+│   │   ├── media_alunos.py
+│   │
+│   │
 ├── main.py
 ```
