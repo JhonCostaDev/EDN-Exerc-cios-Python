@@ -1,5 +1,25 @@
-#Conversor de Temperatura
+# Faça um programa que converte temperatura de Celsius para Fahrenheit
+# fahrenheit = (celsius * 9/5) +32
+# 𝐶 = (( 𝐹 − 32) × 5 )/ 9
+def menu() -> int:
+    '''This function show the main Menu and return a option choose by the user'''
+    pass
 
-celsius = float(input("Digite a temperatura em Celsius: "))
-fahrenheit = (celsius * 9/5) +32
-print(f"{celsius}ºC equivale a {fahrenheit}ºF")
+def get_temperature() -> float:
+    '''This function receive and validate the temperature typed by user'''
+    pass
+
+def convert_fahrenheit_celcius() -> float:
+    '''This function convert the temperature from fahrenheit to celcius'''
+    pass
+
+def convert_celcius_fahrenheit() -> float:
+    '''This function convert the temperature from celcius to fahrenheit'''
+    pass
+
+def main() -> None:
+    pass
+
+
+if __name__ == '__main__':
+    main()

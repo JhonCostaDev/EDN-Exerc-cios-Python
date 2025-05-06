@@ -1,8 +1,12 @@
-#Quero saber se o número é par
+# Faça um programa que recebe um número e diga se ele é par ou impar!
 
-numero = int(input("Digite um número: "))
+def get_number():
+    #receber e validar
+    pass
 
-if not (numero % 2 == 0 ):
-    print("Não é um número par")
-else:
-    print("É par")
+def main():
+    number = get_number()
+    result = 'Par' if number % 2 == 0 else 'Ímpar'
+
+if __name__ == '__main__':
+    main()
