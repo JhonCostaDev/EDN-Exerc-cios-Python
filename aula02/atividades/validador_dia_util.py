@@ -14,6 +14,7 @@ def get_user_day(week_days):
 
 def main():
     week_days = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
+    print('============ É dia Útil ============')
     day = get_user_day(week_days)
     is_business_day = 'Dia útil' if day in week_days[:5] else 'Fim de semana'
     print(is_business_day)

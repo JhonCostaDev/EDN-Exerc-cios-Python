@@ -13,6 +13,7 @@ def get_number() -> int:
             return integer
 
 def main():
+    print('============ Par ou Ímpar ============')
     number = get_number()
     result = 'Par' if number % 2 == 0 else 'Ímpar'
     print(f'O número {number} é um número: {result}')

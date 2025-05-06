@@ -3,6 +3,7 @@
 from numero_par import get_number
 
 def main():
+    print('============ Intervalo entre Números ============')
     number = get_number()
     result = 'Fora da faixa <10 - 20> ' if number < 10 or number > 20 else 'Dentro da faixa <10 - 20>'
     print(f'O número {number} é um número: {result}')

@@ -30,6 +30,7 @@ def get_user_discount():
 calulate_price = lambda price, discount : price - (price * (discount / 100))
 
 def main():
+    print('============ Preço com Desconto ============')
     price = get_user_prince()
     discount = get_user_discount()
     

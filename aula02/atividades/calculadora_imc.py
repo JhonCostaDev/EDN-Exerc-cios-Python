@@ -60,7 +60,7 @@ GRAU DE RISCO: {risk}
     
 def main() -> None:
     '''The main function'''
-    print("Calculadora de Índice de Massa Corporea - IMC")
+    print("======== Calculadora de Índice de Massa Corporea - IMC =======")
     # Take user's values
     weight = get_user_weight()
     height = get_user_height()

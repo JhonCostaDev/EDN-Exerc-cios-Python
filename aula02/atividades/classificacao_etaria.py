@@ -25,6 +25,7 @@ def classify_age(age) -> str:
         return 'Idoso'
     
 def main() -> None:
+    print('============ Classificação Etária ============')
     age = get_user_age()
     age_category = classify_age(age=age)
     print(f'Você é {age_category}' )

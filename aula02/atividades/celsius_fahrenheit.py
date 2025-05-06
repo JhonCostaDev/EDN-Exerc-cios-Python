@@ -46,6 +46,7 @@ def convert_celcius_fahrenheit(temperature_celcius) -> float:
     return (temperature_celcius * 9/5) +32
 
 def main() -> None:
+    print('============ Conversor de Temperatura ============')
     user_option = menu()
     if user_option != 0:
         user_entry = get_temperature()
