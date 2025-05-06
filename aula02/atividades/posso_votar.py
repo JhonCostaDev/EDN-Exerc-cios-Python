@@ -12,7 +12,7 @@ def verify_vote(age:int) -> str:
     
     
 def main():
-    print("Verificar Se pode Votar")
+    print("====== Verifica se pode Votar ====== ")
     age = get_user_age()
     can_vote = verify_vote(age=age)
     print(can_vote)

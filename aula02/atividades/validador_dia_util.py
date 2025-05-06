@@ -3,19 +3,20 @@
 def get_user_day(week_days):
     while True:
         try:
-            day = input("Digite o dia\n")
+            day = input("Digite o dia\n").lower()
+            day = ''.join(day.replace(' ', '').replace('feira', '').replace('-', '').split('-'))
             if day not in week_days:
-                raise
-        except:
-            pass
-
-def check_business_day(day):
-    pass
-
+                raise ValueError('Dia inválido, Digite um dia da semana!')
+        except ValueError as e:
+            print(e)
+        else:
+            return day
 
 def main():
-    week_days = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado', 'domingo']
-    day = get_user_day()
+    week_days = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
+    day = get_user_day(week_days)
+    is_business_day = 'Dia útil' if day in week_days[:5] else 'Fim de semana'
+    print(is_business_day)
     
 
 if __name__ == '__main__':

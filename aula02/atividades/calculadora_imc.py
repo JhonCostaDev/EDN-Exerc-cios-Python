@@ -2,7 +2,7 @@
 # imc = peso / altura ** 2
 
 def get_user_weight() -> float:
-    '''This function take and validates a weight typed by user'''
+    '''This function takes and validates a weight typed by user'''
     while True:
         try:
             weight = input("Digite seu peso (kg):\n")
@@ -17,7 +17,7 @@ def get_user_weight() -> float:
         
         
 def get_user_height() -> float:
-    '''This function take and validates a height typed by user'''
+    '''This function takes a height value from the user and validates it.'''
     while True:
         try:
             height = input("Digite sua altura (cm):\n")
@@ -35,6 +35,7 @@ def get_user_height() -> float:
 calculate_bmi = lambda weight, height : weight / (height**2)
 
 def classify_bmi(bmi:float) -> tuple:
+    '''This function takes a BMI value and returns a tuple containing its classification and associated risk factor.'''
     
     if bmi < 18.5:
         return ('Magreza','Aumentado')
@@ -50,14 +51,17 @@ def classify_bmi(bmi:float) -> tuple:
         return ('Obesidade grau III (mórbida)',	'Muito grave')
     
 def show_results(v_bmi:float, class_bmi:str, risk:str) -> None:
+    '''This function takes three arguments and display a summary of the BMI '''
     print(f'''
 IMC: {v_bmi:.2f} (kg/m²)
 CLASSIFICAÇÃO: {class_bmi}
 GRAU DE RISCO: {risk}
 ''')
     
-def main():
+def main() -> None:
+    '''The main function'''
     print("Calculadora de Índice de Massa Corporea - IMC")
+    # Take user's values
     weight = get_user_weight()
     height = get_user_height()
 
