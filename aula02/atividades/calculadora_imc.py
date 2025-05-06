@@ -1,18 +1,28 @@
-#Calculadora de IMC
-#PESO DIVIDIDO PELA ALTURA **2
+# Faça um programa que recebe a altura e peso do usuário e calcule sua IMC
+# imc = peso / altura ** 2
 
-altura = float(input("Digite a sua altura em metros: "))
-peso = float(input("Digite seu peso em kg :"))
 
-imc = peso / (altura ** 2)
+def get_user_weight():
+    while True:
+        try:
+            weight = input("Digite seu peso:\n")
 
-print(f"Seu IMC é {imc:.2f}")
+        except:
+        else:
 
-if imc < 18.5:
-    print("Abaixo do peso")
-elif imc < 25:
-    print("Peso Normal")
-elif imc < 30:
-    print("Sobrepeso")
-else:
-    print("Acima do Peso")
+def get_user_height():
+    while True:
+        try:
+            height = input("Digite sua altura:\n")
+        except:
+        else:
+
+def calculate_imc(weight, height):
+    pass
+    
+def main():
+    weight = get_user_weight()
+    height = get_user_height()
+    
+if __name__ == '__main__':
+    main()
