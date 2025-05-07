@@ -31,7 +31,7 @@ Você pode rodar o arquivo **"main.py"** para abrir um menu de escolha conforme 
 │   │   ├── posso_votar.py
 │   │   ├── teste.py
 │   │   ├── validador_dia_util.py
-│   │   ├── |validador_intervalo_numerico.py
+│   │   ├── validador_intervalo_numerico.py
 |   │
 |   │
 ├── aula03
