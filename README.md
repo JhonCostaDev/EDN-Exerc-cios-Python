@@ -2,7 +2,7 @@
 # Repositório dos exercícios de fundamentos Python - EDN
 
 ## Instruções
-Você pode rodar o arquivo o arquivo "main.py" para abrir um menu de escolha conforme a imagem abaixo:
+Você pode rodar o arquivo **"main.py"** para abrir um menu de escolha conforme a imagem abaixo:
 
 
 ![alt text](statics/image.png)
@@ -38,6 +38,12 @@ Você pode rodar o arquivo o arquivo "main.py" para abrir um menu de escolha con
 │   ├── atividades
 │   │   ├── calculadora.py
 │   │   ├── media_alunos.py
+│   │
+│   │
+├── aula04
+│   ├── atividades
+│   │   ├── contador_par_impar.py
+│   │   ├── validador_de_senha.py
 │   │
 │   │
 ├── main.py
