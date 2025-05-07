@@ -15,7 +15,6 @@ def verify_even_odd(list_numbers:int) -> tuple:
     return even, odd
 
 
-
 def main():
     numbers = []
 
