@@ -42,6 +42,7 @@ def read_files_names(dictionary):
 
 # here is the probleam
 def switch(option, folder, dict_all_files):
+    '''Essa funcao recebe(opcao, caminho pasta, dicionario) do usuario e retorna a string para a funcao os.system() que chama o arquivo .py para execucao'''
     match option:
         case 1:
             return f'python3 {folder[0]}/{dict_all_files.get(1)}'
