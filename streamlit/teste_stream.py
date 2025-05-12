@@ -3,7 +3,7 @@ import google.generativeai as genai
 import os
 
 # ================================ Gemini
-genai.configure(api_key='AIzaSyCOUzxGXgtXARw4iWLx7V2l6swnF15fXCI')
+genai.configure(api_key='apikey')
 
 model = genai.GenerativeModel("gemini-1.5-flash")
 response = model.generate_content("Olá, como posso ajudar?")
